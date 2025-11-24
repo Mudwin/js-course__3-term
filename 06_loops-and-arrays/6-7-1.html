@@ -1,0 +1,30 @@
+<!-- 6.7 Практическая работа Задание 1-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Практическая работа</title>
+  </head>
+  <body>
+    <h1>Список товаров</h1>
+    <ul class="products">
+      <!-- Список товаров будет сгенерирован здесь -->
+    </ul>
+    <script>
+      const products = ["Мышка", "Клавиатура", "Наушники"];
+      products.push("Монитор");
+      products.push("Принтер");
+      products.push("Флешка");
+
+      const productsListElement = document.querySelector(".products");
+
+      for (let i = 0; i < products.length; i++) {
+        const productsListItemElement = document.createElement("li");
+        productsListItemElement.textContent = products[i];
+        productsListElement.append(productsListItemElement);
+      }
+    </script>
+  </body>
+</html>
