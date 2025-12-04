@@ -1,0 +1,49 @@
+body {
+  padding: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+}
+
+h1 {
+  font-size: 25px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  color: white;
+  padding-inline: 20px;
+  padding-block: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-button {
+  background-color: green;
+}
+
+.find-button {
+  background-color: blue;
+}
+
+.books {
+  list-style: none;
+  margin-left: -35px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.books li {
+  padding: 5px;
+  width: fit-content;
+}
+
+.active {
+  background-color: yellow;
+  border-radius: 5px;
+}
