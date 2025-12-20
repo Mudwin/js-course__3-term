@@ -1,0 +1,22 @@
+body {
+  padding: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.add-product {
+  padding-block: 10px;
+  padding-inline: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.products {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}

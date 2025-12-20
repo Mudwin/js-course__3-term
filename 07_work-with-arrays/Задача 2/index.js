@@ -20,17 +20,18 @@ const handleAddHeightButtonClick = () => {
 };
 
 const handleSortHeightButtonClick = () => {
-  let minimumHeight = prompt("Введите минимальный рост");
+  let minimumHeight = prompt("Введите минимальный рост").trim();
 
-  if (minimumHeight.trim() == "" || isNaN(Number(minimumHeight.trim()))) {
+  if (minimumHeight == "" || isNaN(Number(minimumHeight))) {
     refreshDOM();
+    return;
   }
 
   listElement.innerHTML = "";
   let count = 1;
 
   for (let i = 0; i < heights.length; i++) {
-    if (heights[i] < minimumHeight) {
+    if (heights[i] < Number(minimumHeight)) {
       continue;
     }
 
