@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Задача 1</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <h1>Форма опроса</h1>
+    <form action="#" class="form">
+      <div>
+        <label for="username">Имя пользователя:</label>
+        <input type="text" id="username" name="username" required />
+      </div>
+      <div>
+        <label for="email">Email: </label>
+        <input type="email" id="email" name="email" required />
+      </div>
+      <div>
+        Пол:
+        <label for="m-sex">
+          <input type="radio" value="Мужской" name="sex" id="m-sex" />
+          Мужской
+        </label>
+        <label for="w-sex">
+          <input type="radio" value="Женский" name="sex" id="w-sex" />
+          Женский
+        </label>
+      </div>
+      <div>
+        Оценка сервиса
+        <input
+          type="range"
+          name="rating"
+          id="rating"
+          min="1"
+          max="10"
+          step="1"
+        />
+      </div>
+      <div>
+        Интересы пользователя: <br />
+        <label for="interests-sport">
+          <input
+            id="interests-sport"
+            type="checkbox"
+            name="interests"
+            value="Спорт"
+          />
+          Спорт
+        </label>
+        <br />
+        <label for="interests-music">
+          <input
+            id="interests-music"
+            type="checkbox"
+            name="interests"
+            value="Музыка"
+          />
+          Музыка
+        </label>
+        <br />
+        <label for="interests-travelling">
+          <input
+            type="checkbox"
+            name="interests"
+            id="interests-travelling"
+            value="Путешествия"
+          />
+          Путешествия
+        </label>
+        <br />
+        <label for="interests-cinema">
+          <input
+            type="checkbox"
+            id="interests-cinema"
+            name="interests"
+            value="Кино"
+          />
+          Кино
+        </label>
+      </div>
+      <div>
+        <label for="comments">Дополнительные комментарии:</label> <br />
+        <textarea name="comments" id="comments"></textarea>
+      </div>
+      <button type="submit" name="button" class="form-button">Отправить</button>
+    </form>
+    <div class="results"></div>
+    <script src="./index.js"></script>
+  </body>
+</html>

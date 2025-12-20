@@ -1,0 +1,25 @@
+body {
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+
+label {
+  display: inline-block;
+}
+
+textarea {
+  width: 400px;
+  height: 100px;
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
