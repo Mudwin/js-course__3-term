@@ -1,0 +1,27 @@
+body {
+  background-color: darkslategray;
+  padding: 50px;
+}
+
+.mini-images {
+  display: flex;
+  gap: 15px;
+}
+
+.mini-image {
+  width: 100px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.mini-image img {
+  width: 100%;
+}
+
+.big-image {
+  width: 600px;
+}
+
+.big-image img {
+  width: 100%;
+}
