@@ -1,0 +1,41 @@
+body {
+  padding: 30px;
+  font-family: Arial, sans-serif;
+}
+
+form {
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: start;
+}
+
+input {
+  padding: 5px;
+}
+
+button {
+  font-size: 15px;
+}
+
+.error-message {
+  color: red;
+}
+
+table {
+  border-collapse: collapse;
+  width: 60%;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ccc;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
