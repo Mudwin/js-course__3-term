@@ -1,0 +1,51 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: lightblue;
+  position: relative;
+}
+
+.container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.form {
+  display: flex;
+  gap: 15px;
+}
+
+.input {
+  font-size: 20px;
+  padding-block: 15px;
+  padding-inline: 20px;
+  border-radius: 10px;
+  border: none;
+  outline: 1px solid gray;
+  text-transform: uppercase;
+}
+
+.input:focus {
+  outline: 2px solid black;
+}
+
+.button {
+  font-size: 20px;
+  background-color: lightskyblue;
+  font-weight: 700;
+  border: none;
+  border-radius: 15px;
+  padding-inline: 20px;
+  cursor: pointer;
+}
+
+.form-message {
+  color: green;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
