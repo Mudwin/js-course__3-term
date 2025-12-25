@@ -1,0 +1,118 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 30px;
+  color: #333;
+}
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #999;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+form input[type="checkbox"] {
+  margin-bottom: 20px;
+}
+
+form input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 5px;
+  width: 100%;
+}
+
+form input[type="submit"]:hover {
+  background-color: #444;
+  cursor: pointer;
+}
+
+table {
+  width: 100%;
+  background-color: #fff;
+  text-align: left;
+  border-collapse: collapse;
+  box-shadow: 0px 0px 5px #999;
+}
+
+th,
+td {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #333;
+  color: #fff;
+}
+
+td {
+  vertical-align: top;
+}
+
+.delete-button {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+#delete-film {
+  padding-inline: 60px;
+  padding-block: 10px;
+}
+
+#delete-films {
+  padding-block: 15px;
+  padding-inline: 30px;
+  align-self: end;
+}
+
+.sorting {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.sort-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  margin-right: 50px;
+  flex-grow: 1;
+  display: flex;
+  gap: 10px;
+  box-shadow: 0px 0px 5px #999;
+}
+
+.sort-container input,
+select {
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  flex-grow: 1;
+}
+
+.error-message {
+  margin-bottom: 0px;
+  color: red;
+  font-weight: 700;
+}
