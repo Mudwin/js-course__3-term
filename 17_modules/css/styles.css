@@ -1,0 +1,166 @@
+@import url("./normalize.css");
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: lightsteelblue;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+input {
+  border: none;
+  padding-block: 15px;
+  padding-inline: 25px;
+  border-radius: 40px;
+  width: 600px;
+  box-shadow: 0 4px 6px 0px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  background-color: white;
+  box-shadow: 0 4px 6px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th {
+  background-color: #2d3436;
+  color: #ffffff;
+  padding: 12px 15px;
+  text-align: left;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-bottom: 2px solid black;
+  min-width: 200px;
+}
+
+th:hover {
+  background-color: #4b5557;
+}
+
+th:last-child:hover {
+  background-color: #2d3436;
+}
+
+td {
+  padding: 12px 15px;
+  border-bottom: 1px solid gainsboro;
+  color: #4a5568;
+  vertical-align: middle;
+}
+
+tbody tr:hover {
+  background-color: #edf2f7;
+}
+
+td:last-child,
+th:last-child {
+  text-align: right;
+}
+
+.container {
+  padding-inline: 10px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  justify-content: space-between;
+}
+
+.header {
+  font-size: 45px;
+}
+
+.store-header {
+  display: inline-block;
+}
+
+.form-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.add-button {
+  border: none;
+  background-color: lightseagreen;
+  color: white;
+  font-weight: 700;
+  border-radius: 20px;
+  padding-block: 10px;
+  padding-inline: 20px;
+  transition-duration: 0.2s;
+}
+
+.add-button:hover {
+  background-color: rgb(45, 201, 193);
+}
+
+.store-button {
+  align-self: end;
+}
+
+.form-button {
+  box-shadow: 0 4px 6px 0px rgba(0, 0, 0, 0.1);
+}
+
+.delete-button {
+  background-color: #ff3c3c;
+  color: white;
+  border: none;
+  padding: 6px 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background-color 0.2s;
+}
+
+.delete-button:hover {
+  background-color: red;
+}
+
+.error-message {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: red;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 48px;
+  height: 48px;
+  border: 5px solid lightseagreen;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
