@@ -27,7 +27,7 @@ export default class EditDelivery extends Delivery {
 
     const element = this.cardElement;
 
-    element.setAttribute("data-status", this._status); // maybe через dataset
+    element.dataset.status = this._status;
   }
 
   _renderEditButton() {
@@ -44,7 +44,7 @@ export default class EditDelivery extends Delivery {
   _showEditForm() {
     const element = this.cardElement;
 
-    if (element.querySelector(".edit-form")) {
+    if (document.querySelector(".edit-form")) {
       return;
     }
 
@@ -84,7 +84,7 @@ export default class EditDelivery extends Delivery {
                         Отменен
                     </option>
                 </select>
-                <button class="save-button">Сохранить</button>
+                <button type="submit" class="save-button">Сохранить</button>
             </form>
         </div>
     `
@@ -96,17 +96,23 @@ export default class EditDelivery extends Delivery {
         editFormOverlay.remove();
       });
 
-    editFormOverlay
-      .querySelector(".save-button")
-      .addEventListener("click", () => {
-        this.customer = editFormOverlay.querySelector(".edit-name").value;
-        this.address = editFormOverlay.querySelector(".edit-address").value;
-        this.distance = editFormOverlay.querySelector(".edit-distance").value;
-        this.status = editFormOverlay.querySelector(".edit-status").value;
+    editFormOverlay.querySelector("form").addEventListener("submit", (e) => {
+      e.preventDefault();
 
-        editFormOverlay.remove();
-      });
+      this.customer = editFormOverlay.querySelector(".edit-name").value;
+      this.address = editFormOverlay.querySelector(".edit-address").value;
+      this.distance = editFormOverlay.querySelector(".edit-distance").value;
+      this.status = editFormOverlay.querySelector(".edit-status").value;
+
+      editFormOverlay.remove();
+    });
 
     document.body.append(editFormOverlay);
+  }
+
+  static getTotalDistance(deliveryArr) {
+    return deliveryArr
+      .filter((delivery) => delivery.status !== "cancelled")
+      .reduce((sum, delivery) => sum + Number(delivery.distance), 0);
   }
 }

@@ -65,7 +65,9 @@ export default class Delivery {
 
     this._element.querySelector(".customer").textContent = this._customer;
     this._element.querySelector(".address").textContent = this._address;
-    this._element.querySelector(".distance").textContent = this._distance;
+    this._element.querySelector(
+      ".distance"
+    ).textContent = `${this._distance} км`;
   }
 
   get cardElement() {
