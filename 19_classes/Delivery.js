@@ -68,9 +68,7 @@ export default class Delivery {
     this._element.querySelector(".distance").textContent = this._distance;
   }
 
-  render() {
-    this._updateUI();
-
+  get cardElement() {
     return this._element;
   }
 }
