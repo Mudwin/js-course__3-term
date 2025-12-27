@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: gainsboro;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.container {
+  /* outline: 1px solid red; */
+}
+
+.delivery-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.delivery-card {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  gap: 20px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.category-header {
+  color: gray;
+  font-weight: 500;
+}
+
+.category-content {
+  font-weight: 700;
+}
